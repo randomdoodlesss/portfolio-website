@@ -39,19 +39,21 @@ p {
   font-weight: var(--font-weight1);
 }
 
-
 a:visited {
   color: var(--05676e);
 }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
   text-decoration: none;
 }
 
 a:active {
   color: var(--active-color);
 }
-.button, button {
+
+.button,
+button {
   border: none;
   display: inline-block;
   font-family: inherit;
@@ -61,7 +63,7 @@ a:active {
   padding: 10px;
   border-radius: 3px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-  transition: 0.2s opacity
+  transition: 0.2s opacity;
 }
 
 button:hover,
@@ -99,7 +101,7 @@ button:focus,
 }
 
 .reachout {
-  max-width:700px;
+  max-width: 700px;
   margin: 0 auto;
 }
 
@@ -139,6 +141,7 @@ button:focus,
   display: inline-block;
   width: 33%;
 }
+
 /* end grid fallback */
 
 .grid {
@@ -161,31 +164,37 @@ button:focus,
   padding: 20px;
 }
 
-@media all and (max-width: 750px){
+@media all and (max-width: 750px) {
   /* shared code */
 }
+
 @media all and (max-width: 500px) {
   .grid {
     grid-template-columns: 1fr;
     grid-gap: 10px;
   }
+
   .grid__item:last-child {
     grid-column: auto / auto;
     grid-row: auto / auto;
   }
+
   h1 {
     font-size: 22px;
   }
 }
-@media all and (min-width: 500px) and (max-width: 750px){
+
+@media all and (min-width: 500px) and (max-width: 750px) {
   .grid {
     grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
   }
+
   .grid__item:last-child {
     grid-column: auto / auto;
     grid-row: auto / auto;
   }
+
   h1 {
     font-size: 22px;
   }
@@ -195,9 +204,11 @@ button:focus,
   0% {
     fill: #edc655;
   }
+
   50% {
     fill: #fcffad;
   }
+
   100% {
     fill: #f76414;
   }
@@ -215,6 +226,7 @@ button:focus,
   from {
     transform: translate(0, 50px);
   }
+
   to {
     transform: translate(200px, 50px);
   }
@@ -228,6 +240,7 @@ button:focus,
   from {
     transform: translate(446px, 48px);
   }
+
   to {
     transform: translate(100px, 48px);
   }
